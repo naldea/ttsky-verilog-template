@@ -4,7 +4,7 @@
 // ----------------------------
 // Semáforo con contador integrado (Verilog-2001 compatible)
 // ----------------------------
-module semaforo(
+module tt_um_semaforo(
     input  clk,
     input  rst,
     input  TA, TB,       // sensores de vehículos
