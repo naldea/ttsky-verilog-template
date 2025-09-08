@@ -8,9 +8,6 @@ You can also include images in this folder and reference them in the markdown. E
 -->
 
 ## How it works
-
-
-
 This project was developed as part of the course **IEE2713-1: Digital Systems** at **Pontificia Universidad Católica de Chile**, under the guidance of **Prof. Cristian Tejos**. 
 
 It implements a **finite state machine (FSM)** combined with a counter to simulate the operation of a traffic light controller for two perpendicular streets: **Street A ** and **Street B**.  
@@ -22,7 +19,7 @@ It implements a **finite state machine (FSM)** combined with a counter to simula
 
 The FSM starts from Street A in green after reset.  
 
----
+
 ## How to test
 
 
