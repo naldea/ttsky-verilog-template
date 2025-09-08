@@ -10,7 +10,7 @@ You can also include images in this folder and reference them in the markdown. E
 ## How it works
 This project was developed as part of the course **IEE2713-1: Digital Systems** at **Pontificia Universidad Católica de Chile**, under the guidance of **Prof. Cristian Tejos**. 
 
-It implements a **finite state machine (FSM)** combined with a counter to simulate the operation of a traffic light controller for two perpendicular streets: **Street A ** and **Street B**.  
+It implements a **finite state machine (FSM)** combined with a counter to simulate the operation of a traffic light controller for two perpendicular streets: **Street A** and **Street B**.  
 
 - **Normal mode**: Street A has priority. If cars are detected on Street A (sensor TA), its light stays green. When there are no more cars, Street A changes to yellow for a fixed time, then to red, allowing Street B to turn green. The cycle then repeats with Street B.  
 - **Parade mode (P)**: When the button *P* is pressed, Street B stays green indefinitely, regardless of sensors.  
