@@ -11,10 +11,20 @@ You can also include images in this folder and reference them in the markdown. E
 
 Explain how your project works
 
+This project born in a course of Digitals Systems at Pontificia Universidad Catolica de Chile, It works with a top module about a FSM, and a counter, the idea is to simulate the work of two traffic light, and two street A, B, and two modes.
+when its start and the reset = 1
+
+
+
+
 ## How to test
 
 Explain how to use your project
 
+
 ## External hardware
 
 List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+
+6 LEDs to simulate the two traffic lights
+5 buttons for, A and B street, and for de P mode and R mode, RESET
