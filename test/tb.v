@@ -6,21 +6,28 @@
 */
 module tb_semaforo;
 
-    logic clk, rst, TA, TB, P, R;
-    logic [1:0] LA, LB;
-    logic on;
+    logic clk, rst;
+    logic TA, TB, P, R;
+    wire [1:0] LA, LB;
+    wire on;
 
-    semaforo_maquina uut (
-        .clk(clk),
-        .rst(rst),
-        .TA(TA),
-        .TB(TB),
-        .P(P),
-        .R(R),
-        .LA(LA),
-        .LB(LB),
-        .on(on)
+    // Instancia del DUT (Device Under Test)
+    tt_um_semaforo uut (
+        .ui_in  ({4'b0000, R, P, TB, TA}), // mapeo: [3]=R, [2]=P, [1]=TB, [0]=TA
+        .uo_out (),                        // conectaremos abajo con LA, LB, on
+        .uio_in (8'b0),
+        .uio_out(),
+        .uio_oe (),
+        .ena    (1'b1),    // enable siempre activo
+        .clk    (clk),
+        .rst_n  (~rst)
     );
+
+    // Extraemos las señales desde uo_out
+    wire [7:0] uo_out = uut.uo_out;
+    assign LA = uo_out[1:0];
+    assign LB = uo_out[3:2];
+    assign on = uo_out[4];
 
     // Generador de reloj
     initial clk = 0;
