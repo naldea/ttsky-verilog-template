@@ -36,7 +36,7 @@ The FSM starts from Street A in green after reset.
 
 You can run the simulation using **cocotb** and `make SIM=icarus` or test directly on FPGA with buttons and LEDs.  
 
-<img src=img/FSM.png />
+<img src=src/img/FSM.png>
 
 
 ## External hardware
